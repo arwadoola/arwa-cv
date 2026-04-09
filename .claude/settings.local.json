@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:api.github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(git clone:*)",
+      "Bash(SHELL=/usr/bin/bash git clone https://github.com/obra/superpowers.git /c/Users/arwad/.claude/superpowers)",
+      "Bash(curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md)",
+      "Bash(curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md)",
+      "Bash(curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/brainstorming/SKILL.md -o /dev/null)",
+      "Bash(curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md)",
+      "Bash(curl.exe -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/systematic-debugging/SKILL.md)",
+      "Bash(bash -c 'curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md')",
+      "Bash(git --version)",
+      "Bash(bash -c 'curl -sL https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md')",
+      "Bash(powershell -Command \"Invoke-WebRequest -Uri ''https://raw.githubusercontent.com/obra/superpowers/main/skills/requesting-code-review/SKILL.md'' -OutFile ''C:/Users/arwad/app1/SKILL_review.md''\")",
+      "Bash(powershell -Command \"Invoke-WebRequest -Uri ''https://raw.githubusercontent.com/obra/superpowers/main/skills/verification-before-completion/SKILL.md'' -UseBasicParsing | Select-Object -ExpandProperty Content\")",
+      "Bash(where git:*)"
+    ]
+  }
+}

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header .title {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        header .contact {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+            opacity: 0.85;
+        }
+
+        header a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        header a:hover {
+            opacity: 1;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            display: inline-block;
+        }
+
+        .about {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .job, .education, .project {
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .job:last-child, .education:last-child, .project:last-child {
+            border-bottom: none;
+        }
+
+        .job-header, .edu-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+
+        .job-title, .degree {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .company, .school {
+            color: #667eea;
+            font-weight: 500;
+        }
+
+        .date {
+            color: #999;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+
+        .description {
+            color: #666;
+            margin-top: 8px;
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1em;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            background: #667eea;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        .project-title {
+            font-weight: 600;
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .project-link {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header .contact {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .job-header {
+                flex-direction: column;
+            }
+
+            .date {
+                margin-top: 5px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>John Doe</h1>
+            <p class="title">Full Stack Developer</p>
+            <div class="contact">
+                <span>📧 john@example.com</span>
+                <span>📱 +1 (555) 123-4567</span>
+                <span>🌍 <a href="https://yourwebsite.com">yourwebsite.com</a></span>
+                <span>💼 <a href="https://linkedin.com/in/johndoe">LinkedIn</a></span>
+            </div>
+        </header>
+
+        <main>
+            <!-- About Section -->
+            <section class="about">
+                <p>Passionate full-stack developer with 5+ years of experience building scalable web applications. Specializing in React, Node.js, and cloud technologies. Known for writing clean, maintainable code and delivering projects on schedule.</p>
+            </section>
+
+            <!-- Experience Section -->
+            <section>
+                <h2>Experience</h2>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Senior Developer</span>
+                        <span class="date">2022 - Present</span>
+                    </div>
+                    <div class="company">Tech Company Inc.</div>
+                    <div class="description">
+                        Led development of customer-facing applications using React and Node.js. Mentored junior developers and improved CI/CD pipeline efficiency by 40%.
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Full Stack Developer</span>
+                        <span class="date">2020 - 2022</span>
+                    </div>
+                    <div class="company">StartUp Co.</div>
+                    <div class="description">
+                        Built and maintained microservices architecture. Implemented automated testing increasing code coverage from 45% to 85%.
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="job-title">Junior Developer</span>
+                        <span class="date">2019 - 2020</span>
+                    </div>
+                    <div class="company">Web Solutions LLC</div>
+                    <div class="description">
+                        Developed responsive web applications for various clients. Collaborated with design team to implement UI/UX improvements.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section>
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">CSS</span>
+                            <span class="skill-tag">TypeScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>DevOps</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">CI/CD</span>
+                            <span class="skill-tag">Git</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Webpack</span>
+                            <span class="skill-tag">Figma</span>
+                            <span class="skill-tag">Jira</span>
+                            <span class="skill-tag">REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section>
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <div class="project-title">E-Commerce Platform</div>
+                    <a href="https://github.com/johndoe/ecommerce" class="project-link">GitHub →</a>
+                    <div class="description">
+                        Built a full-stack e-commerce platform with React, Node.js, and PostgreSQL. Implemented payment integration and real-time inventory management. Deployed on AWS with Docker containerization.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Task Management App</div>
+                    <a href="https://task-app-demo.com" class="project-link">Live Demo →</a>
+                    <div class="description">
+                        Created a collaborative task management tool with real-time updates using Socket.io. Features include user authentication, team workspaces, and analytics dashboard.
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-title">Data Visualization Dashboard</div>
+                    <a href="https://github.com/johndoe/dashboard" class="project-link">GitHub →</a>
+                    <div class="description">
+                        Developed an interactive dashboard for visualizing complex datasets using D3.js and React. Processes and displays real-time data from multiple API endpoints.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section>
+                <h2>Education</h2>
+
+                <div class="education">
+                    <div class="edu-header">
+                        <span class="degree">Bachelor of Science in Computer Science</span>
+                        <span class="date">2019</span>
+                    </div>
+                    <div class="school">State University</div>
+                </div>
+
+                <div class="education">
+                    <div class="edu-header">
+                        <span class="degree">Certification - Full Stack Web Development</span>
+                        <span class="date">2018</span>
+                    </div>
+                    <div class="school">Online Learning Platform</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
